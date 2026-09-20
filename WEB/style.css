@@ -1,0 +1,90 @@
+.bxh-container {
+    background-color: #1a1a1a;
+    color: white;
+    width: 350px;
+    padding: 20px;
+    border-radius: 12px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    border: 2px solid #444;
+}
+
+#danh_sach_top {
+    list-style-type: none; /* Bỏ dấu chấm tròn của thẻ ul */
+    padding: 0;
+}
+
+#danh_sach_top li {
+    background-color: #333;
+    margin: 8px 0;
+    padding: 12px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between; /* Đẩy tên sang trái, điểm sang phải */
+    font-size: 16px;
+}
+
+/* Hiệu ứng đặc biệt cho Top 1 */
+#danh_sach_top li:nth-child(1) {
+    background-color: #ffd700;
+    color: #000;
+    font-weight: bold;
+    transform: scale(1.05); /* Cho dòng Top 1 to hơn một chút */
+}
+
+/* Highlight Top 2 và Top 3 */
+#danh_sach_top li:nth-child(2) { background-color: #c0c0c0; color: #000; }
+#danh_sach_top li:nth-child(3) { background-color: #cd7f32; color: #000; }
+
+#o_nhap_ten{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: white;
+}
+#o_nhap_ten::placeholder {
+    color: #aaa; /* Màu chữ gợi ý */
+}
+#o_nhap_ten:focus {
+    outline: none;
+    border-color: #ffd700; /* Màu viền khi focus */
+    box-shadow: 0 0 5px #ffd700; /* Hiệu ứng sáng */
+}
+#o_nhap_ten:hover{
+    border-color: #ffd700; /* Màu viền khi hover */
+
+}
+#o_nhap_diem{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: white;
+}
+.btn_add {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn_add:hover {
+    background-color: #218838;
+    transform: scale(1.05); /* Nhấn mạnh khi hover */
+}
+.btn_add:active {
+    background-color: #1e7e34;
+    transform: scale(0.95); /* Hiệu ứng nhấn */
+}
+.btn_add:focus {
+    outline: none; /* Bỏ viền khi focus */
+    box-shadow: 0 0 5px #28a745; /* Hiệu ứng sáng khi focus */
+}

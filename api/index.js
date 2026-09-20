@@ -29,7 +29,7 @@ module.exports = async (req, res) => {
         }
 
         if (req.method === 'GET') {
-            const leaderboard = await collection.find().sort({ score: -1 }).limit(10).toArray();
+            const leaderboard = await collection.find().sort({ score: -1 }).limit(100).toArray();
             return res.status(200).json(leaderboard);
         }
     } catch (error) {
